@@ -19,7 +19,7 @@ NEWSPIDER_MODULE = 'finalexercise.spiders'
 #USER_AGENT = 'finalexercise (+http://www.yourdomain.com)'
 
 # Obey robots.txt rules
-ROBOTSTXT_OBEY = True
+ROBOTSTXT_OBEY = False
 
 # Configure maximum concurrent requests performed by Scrapy (default: 16)
 #CONCURRENT_REQUESTS = 32
@@ -33,7 +33,7 @@ ROBOTSTXT_OBEY = True
 #CONCURRENT_REQUESTS_PER_IP = 16
 
 # Disable cookies (enabled by default)
-#COOKIES_ENABLED = False
+COOKIES_ENABLED = False
 
 # Disable Telnet Console (enabled by default)
 #TELNETCONSOLE_ENABLED = False
@@ -64,9 +64,21 @@ ROBOTSTXT_OBEY = True
 
 # Configure item pipelines
 # See https://doc.scrapy.org/en/latest/topics/item-pipeline.html
-#ITEM_PIPELINES = {
-#    'finalexercise.pipelines.FinalexercisePipeline': 300,
-#}
+ITEM_PIPELINES = {
+	'scrapy_mysql_pipeline.MySQLPipeline': 300,
+   # 'finalexercise.pipelines.FinalexerciseJsonExportPipeline': 300,
+   # 'finalexercise.pipelines.FinalexerciseCSVExportPipeline': 300,
+}
+
+MYSQL_HOST = 'localhost'
+MYSQL_PORT = 3306
+MYSQL_USER = 'root'   # if there is a user, specify your user here. If root, 'root'
+MYSQL_PASSWORD = ''   # if there is password, specify your password here
+MYSQL_DB = 'crawl'
+MYSQL_TABLE = 'documents'
+MYSQL_UPSERT = False
+MYSQL_RETRIES = 3
+MYSQL_CLOSE_ON_ERROR = True
 
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See https://doc.scrapy.org/en/latest/topics/autothrottle.html

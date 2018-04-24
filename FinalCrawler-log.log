@@ -1,0 +1,202 @@
+2018-04-24 00:25:54,700 INFO    : [scrapy.utils.log] Scrapy 1.5.0 started (bot: finalexercise)
+2018-04-24 00:25:54,718 INFO    : [scrapy.utils.log] Versions: lxml 4.2.1.0, libxml2 2.9.8, cssselect 1.0.3, parsel 1.4.0, w3lib 1.19.0, Twisted 17.9.0, Python 2.7.10 (default, Oct  6 2017, 22:29:07) - [GCC 4.2.1 Compatible Apple LLVM 9.0.0 (clang-900.0.31)], pyOpenSSL 17.5.0 (OpenSSL 1.1.0h  27 Mar 2018), cryptography 2.2.2, Platform Darwin-17.5.0-x86_64-i386-64bit
+2018-04-24 00:25:54,724 INFO    : [scrapy.crawler] Overridden settings: {'NEWSPIDER_MODULE': 'finalexercise.spiders', 'SPIDER_MODULES': ['finalexercise.spiders'], 'COOKIES_ENABLED': False, 'BOT_NAME': 'finalexercise'}
+2018-04-24 00:25:54,768 INFO    : [scrapy.middleware] Enabled extensions:
+['scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.corestats.CoreStats']
+2018-04-24 00:25:54,807 INFO    : [scrapy.middleware] Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2018-04-24 00:25:54,809 INFO    : [scrapy.middleware] Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2018-04-24 00:25:54,813 INFO    : [scrapy.middleware] Enabled item pipelines:
+['finalexercise.pipelines.FinalexerciseJsonExportPipeline']
+2018-04-24 00:25:54,814 INFO    : [scrapy.core.engine] Spider opened
+2018-04-24 00:25:54,820 INFO    : [scrapy.extensions.logstats] Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2018-04-24 00:25:54,822 DEBUG   : [scrapy.extensions.telnet] Telnet console listening on 127.0.0.1:6023
+2018-04-24 00:25:55,122 DEBUG   : [scrapy.core.engine] Crawled (200) <GET http://news.donga.com/List?ymd=20180423&m=NP> (referer: None)
+2018-04-24 00:25:55,307 DEBUG   : [scrapy.core.engine] Crawled (200) <GET http://news.donga.com/List/3/all/20180423/89743231/1> (referer: http://news.donga.com/List?ymd=20180423&m=NP)
+2018-04-24 00:25:55,329 DEBUG   : [scrapy.core.engine] Crawled (200) <GET http://news.donga.com/List/3/all/20180423/89743219/1> (referer: http://news.donga.com/List?ymd=20180423&m=NP)
+2018-04-24 00:25:55,342 DEBUG   : [scrapy.core.engine] Crawled (200) <GET http://news.donga.com/List/3/all/20180423/89743247/1> (referer: http://news.donga.com/List?ymd=20180423&m=NP)
+2018-04-24 00:25:55,345 DEBUG   : [scrapy.core.engine] Crawled (200) <GET http://news.donga.com/List/3/all/20180423/89743254/1> (referer: http://news.donga.com/List?ymd=20180423&m=NP)
+2018-04-24 00:25:55,348 DEBUG   : [scrapy.core.engine] Crawled (200) <GET http://news.donga.com/List/3/all/20180423/89743276/1> (referer: http://news.donga.com/List?ymd=20180423&m=NP)
+2018-04-24 00:25:55,386 DEBUG   : [scrapy.core.engine] Crawled (200) <GET http://news.donga.com/List/3/all/20180423/89743242/1> (referer: http://news.donga.com/List?ymd=20180423&m=NP)
+2018-04-24 00:25:55,408 INFO    : [root        ] The url of the target is: http://news.donga.com/List/3/all/20180423/89743231/1
+2018-04-24 00:25:55,426 DEBUG   : [scrapy.core.engine] Crawled (200) <GET http://news.donga.com/List/3/all/20180423/89743394/1> (referer: http://news.donga.com/List?ymd=20180423&m=NP)
+2018-04-24 00:25:55,429 DEBUG   : [scrapy.core.engine] Crawled (200) <GET http://news.donga.com/List/3/all/20180423/89743314/1> (referer: http://news.donga.com/List?ymd=20180423&m=NP)
+2018-04-24 00:25:55,431 DEBUG   : [scrapy.core.engine] Crawled (200) <GET http://news.donga.com/List/3/all/20180423/89743402/1> (referer: http://news.donga.com/List?ymd=20180423&m=NP)
+2018-04-24 00:25:55,431 DEBUG   : [scrapy.core.scraper] Scraped from <200 http://news.donga.com/List/3/all/20180423/89743231/1>
+{'author': [u'\ucd5c\uace0\uc57c \uae30\uc790 '],
+ 'date': ['2018-04-23'],
+ 'title': [u'\u9751 \u201c\ub4dc\ub8e8\ud0b9\ud2b9\uac80 \ubc1b\uc744\uc218 \uc788\uc5b4\u201d \ubbfc\uc8fc\ub2f9\uc5d0 \uc758\uacac \uc804\ub2ec'],
+ 'url': ['http://news.donga.com/List/3/all/20180423/89743231/1']}
+2018-04-24 00:25:55,433 INFO    : [root        ] The url of the target is: http://news.donga.com/List/3/all/20180423/89743219/1
+2018-04-24 00:25:55,447 INFO    : [root        ] The url of the target is: http://news.donga.com/List/3/all/20180423/89743247/1
+2018-04-24 00:25:55,464 INFO    : [root        ] The url of the target is: http://news.donga.com/List/3/all/20180423/89743254/1
+2018-04-24 00:25:55,478 DEBUG   : [scrapy.core.scraper] Scraped from <200 http://news.donga.com/List/3/all/20180423/89743219/1>
+{'author': [u'\uc774\uac74\ud601 \uae30\uc790 ',
+            u'\uac15\uc720\ud604 \uae30\uc790 ',
+            u'\uc2e0\ub3d9\uc9c4 \uae30\uc790 '],
+ 'date': ['2018-04-23'],
+ 'title': [u'\uc815\ubd80 \u201c\ud55c\uad6dGM, 23\uc77c \uc624\ud6c45\uc2dc \ub118\uae30\uba74 \ud655\uc2e4\ud788 \ubc95\uc815\uad00\ub9ac\ub85c \uac08\uac83\u201d'],
+ 'url': ['http://news.donga.com/List/3/all/20180423/89743219/1']}
+2018-04-24 00:25:55,483 DEBUG   : [scrapy.core.engine] Crawled (200) <GET http://news.donga.com/List/3/all/20180423/89743423/1> (referer: http://news.donga.com/List?ymd=20180423&m=NP)
+2018-04-24 00:25:55,485 DEBUG   : [scrapy.core.engine] Crawled (200) <GET http://news.donga.com/List/3/all/20180423/89743287/1> (referer: http://news.donga.com/List?ymd=20180423&m=NP)
+2018-04-24 00:25:55,487 DEBUG   : [scrapy.core.engine] Crawled (200) <GET http://news.donga.com/List/3/all/20180423/89743304/1> (referer: http://news.donga.com/List?ymd=20180423&m=NP)
+2018-04-24 00:25:55,490 DEBUG   : [scrapy.core.engine] Crawled (200) <GET http://news.donga.com/List/3/all/20180423/89743425/1> (referer: http://news.donga.com/List?ymd=20180423&m=NP)
+2018-04-24 00:25:55,490 INFO    : [root        ] The url of the target is: http://news.donga.com/List/3/all/20180423/89743276/1
+2018-04-24 00:25:55,503 DEBUG   : [scrapy.core.scraper] Scraped from <200 http://news.donga.com/List/3/all/20180423/89743247/1>
+{'author': [u'\uad8c\uae30\ubc94 \uae30\uc790 '],
+ 'date': ['2018-04-23'],
+ 'title': [u'\uacbd\ucc30, \uacbd\uacf5\ubaa8 \uc790\uae08\uad00\ub9ac \ucd1d\uad04 \u2018\ud30c\ub85c\uc2a4\u2019 \uc218\uc0ac'],
+ 'url': ['http://news.donga.com/List/3/all/20180423/89743247/1']}
+2018-04-24 00:25:55,506 DEBUG   : [scrapy.core.scraper] Scraped from <200 http://news.donga.com/List/3/all/20180423/89743254/1>
+{'author': [u'\uae40\ub3d9\ud601 \uae30\uc790 ',
+            u'\uae40\uc790\ud604 \uae30\uc790 '],
+ 'date': ['2018-04-23'],
+ 'title': [u'\u201c\uc548\ud76c\uc815 \uac15\uc5f0 \ucc38\uc11d\ud55c \uacbd\uacf5\ubaa8 \ud68c\uc6d0\ub4e4, \uc774\uc0c1\ud558\uac8c \ubcf4\uc5ec\u201d'],
+ 'url': ['http://news.donga.com/List/3/all/20180423/89743254/1']}
+2018-04-24 00:25:55,508 INFO    : [root        ] The url of the target is: http://news.donga.com/List/3/all/20180423/89743242/1
+2018-04-24 00:25:55,524 DEBUG   : [scrapy.core.engine] Crawled (200) <GET http://news.donga.com/List/3/all/20180423/89743387/1> (referer: http://news.donga.com/List?ymd=20180423&m=NP)
+2018-04-24 00:25:55,524 DEBUG   : [scrapy.core.scraper] Scraped from <200 http://news.donga.com/List/3/all/20180423/89743276/1>
+{'author': [u'\uc7a5\uad00\uc11d \uae30\uc790 ',
+            u'\uae40\uc0c1\uc6b4 \uae30\uc790 '],
+ 'date': ['2018-04-23'],
+ 'title': [u'\ubc15\uc6d0\uc21c \u201c7\ub144 \u5e02\u653f\uc5d0 \ub300\ud55c \uc2dc\ubbfc \ud3c9\uac00, \uc555\ub3c4\uc801 \uacbd\uc120 \uc2b9\ub9ac\uac00 \ub9d0\ud574\uc918\u201d'],
+ 'url': ['http://news.donga.com/List/3/all/20180423/89743276/1']}
+2018-04-24 00:25:55,527 DEBUG   : [scrapy.core.scraper] Scraped from <200 http://news.donga.com/List/3/all/20180423/89743242/1>
+{'author': [u'\ud669\ud615\uc900 \uae30\uc790 '],
+ 'date': ['2018-04-23'],
+ 'title': [u'\ub4dc\ub8e8\ud0b9, \uae40\uacbd\uc218-\ubcf4\uc88c\uad00\uc5d0 \u2018500\ub9cc\uc6d0 \uad00\ub828\u2019 \ud611\ubc15\uc131 \ubb38\uc790 \ubcf4\ub0b4'],
+ 'url': ['http://news.donga.com/List/3/all/20180423/89743242/1']}
+2018-04-24 00:25:55,529 INFO    : [root        ] The url of the target is: http://news.donga.com/List/3/all/20180423/89743394/1
+2018-04-24 00:25:55,541 INFO    : [root        ] The url of the target is: http://news.donga.com/List/3/all/20180423/89743314/1
+2018-04-24 00:25:55,554 INFO    : [root        ] The url of the target is: http://news.donga.com/List/3/all/20180423/89743402/1
+2018-04-24 00:25:55,569 DEBUG   : [scrapy.core.scraper] Scraped from <200 http://news.donga.com/List/3/all/20180423/89743394/1>
+{'author': [u'\ubc15\uc6a9 \ud2b9\ud30c\uc6d0 '],
+ 'date': ['2018-04-23'],
+ 'title': [u'\ube45\ud130 \ucc28 \u201c\uae40\uc815\uc740, \ud575\ubcf4\uc720\uad6d \uc120\uc5b8\ud55c \uac83\u201d'],
+ 'url': ['http://news.donga.com/List/3/all/20180423/89743394/1']}
+2018-04-24 00:25:55,571 DEBUG   : [scrapy.core.scraper] Scraped from <200 http://news.donga.com/List/3/all/20180423/89743314/1>
+{'author': [u'\ubc15\ud6c8\uc0c1 \uae30\uc790 '],
+ 'date': ['2018-04-23'],
+ 'title': [u'\ubcf4\uc218\uc57c\ub2f9 \u201c\u5317, \ud575\ud3d0\uae30 \uc544\ub2cc \ub3d9\uacb0 \ubc1c\ud45c\ud588\uc744 \ubfd0\u201d'],
+ 'url': ['http://news.donga.com/List/3/all/20180423/89743314/1']}
+2018-04-24 00:25:55,576 DEBUG   : [scrapy.core.engine] Crawled (200) <GET http://news.donga.com/List/3/all/20180423/89743437/1> (referer: http://news.donga.com/List?ymd=20180423&m=NP)
+2018-04-24 00:25:55,576 DEBUG   : [scrapy.core.scraper] Scraped from <200 http://news.donga.com/List/3/all/20180423/89743402/1>
+{'author': [u'\uc724\uc644\uc900 \ud2b9\ud30c\uc6d0 '],
+ 'date': ['2018-04-23'],
+ 'title': [u'\u4e2d \u201c\u5317 \ube44\ud575\ud654 \uc801\uadf9 \uc5ed\ud560\ud560\uac83\u201d \ud658\uc601\uc18d \uad00\uc601\uc5b8\ub860 \u201c\ub300\ubd81\uc81c\uc7ac \ud574\uc81c\ud574\uc57c\u201d \uc8fc\uc7a5'],
+ 'url': ['http://news.donga.com/List/3/all/20180423/89743402/1']}
+2018-04-24 00:25:55,583 INFO    : [root        ] The url of the target is: http://news.donga.com/List/3/all/20180423/89743423/1
+2018-04-24 00:25:55,599 DEBUG   : [scrapy.core.engine] Crawled (200) <GET http://news.donga.com/List/3/all/20180423/89743463/1> (referer: http://news.donga.com/List?ymd=20180423&m=NP)
+2018-04-24 00:25:55,599 INFO    : [root        ] The url of the target is: http://news.donga.com/List/3/all/20180423/89743287/1
+2018-04-24 00:25:55,613 INFO    : [root        ] The url of the target is: http://news.donga.com/List/3/all/20180423/89743304/1
+2018-04-24 00:25:55,626 INFO    : [root        ] The url of the target is: http://news.donga.com/List/3/all/20180423/89743425/1
+2018-04-24 00:25:55,639 DEBUG   : [scrapy.core.scraper] Scraped from <200 http://news.donga.com/List/3/all/20180423/89743423/1>
+{'author': [u'\uc774\uc2b9\ud5cc \uc815\uce58\ubd80\uc7a5 '],
+ 'date': ['2018-04-23'],
+ 'title': [u'[\uc774\uc2b9\ud5cc \uc815\uce58\ubd80\uc7a5\uc758 \ub274\uc2a4 \uc778\uc0ac\uc774\ud2b8]\uae40\uc815\uc740, \ud3fc\ud398\uc774\uc624 \ub9cc\ub09c\ub4a4 \ubcd1\uc9c4\ub178\uc120 \ubcc0\uacbd\u2026 \ud2b8\ub7fc\ud504 \uc694\uad6c\uc5d0 \uc751\ub2f5?'],
+ 'url': ['http://news.donga.com/List/3/all/20180423/89743423/1']}
+2018-04-24 00:25:55,642 DEBUG   : [scrapy.core.scraper] Scraped from <200 http://news.donga.com/List/3/all/20180423/89743287/1>
+{'author': [u'\uae40\uc0c1\uc6b4 \uae30\uc790 ',
+            u'\ubc15\ud6c8\uc0c1 \uae30\uc790 '],
+ 'date': ['2018-04-23'],
+ 'title': [u'\u8207 17\uac1c \uad11\uc5ed\ub2e8\uccb4 \ud6c4\ubcf4 \uc120\uc815 \ub9c8\ubb34\ub9ac'],
+ 'url': ['http://news.donga.com/List/3/all/20180423/89743287/1']}
+2018-04-24 00:25:55,644 INFO    : [root        ] The url of the target is: http://news.donga.com/List/3/all/20180423/89743387/1
+2018-04-24 00:25:55,657 DEBUG   : [scrapy.core.scraper] Scraped from <200 http://news.donga.com/List/3/all/20180423/89743304/1>
+{'author': [u'\uc190\ud6a8\uc8fc \uae30\uc790 '],
+ 'date': ['2018-04-23'],
+ 'title': [u'\u201c\u5317, 6\ucc28\ub840 \ud575\uc2e4\ud5d8\uc73c\ub85c \ud575\ubb34\uae30 \uc644\uc131\u2026 \ucd94\uac00 \uc2dc\ud5d8 \ud544\uc694\uc5c6\ub294 \uc218\uc900\u201d'],
+ 'url': ['http://news.donga.com/List/3/all/20180423/89743304/1']}
+2018-04-24 00:25:55,660 DEBUG   : [scrapy.core.scraper] Scraped from <200 http://news.donga.com/List/3/all/20180423/89743425/1>
+{'author': [u'\uc2e0\ub098\ub9ac \uae30\uc790 ',
+            u'\uc190\ud6a8\uc8fc \uae30\uc790 '],
+ 'date': ['2018-04-23'],
+ 'title': [u'\ud48d\uacc4\ub9ac \ud575\uc2e4\ud5d8\uc7a5 \ud3d0\uae30, \uc2e4\ud6a8\uc131 \uc758\ubb38\u2026 2008\ub144 \u2018\uc601\ubcc0 \ub0c9\uac01\ud0d1 \ud3ed\ud30c\uc1fc\u2019 \uc7ac\uc5f0 \uc6b0\ub824'],
+ 'url': ['http://news.donga.com/List/3/all/20180423/89743425/1']}
+2018-04-24 00:25:55,664 DEBUG   : [scrapy.core.engine] Crawled (200) <GET http://news.donga.com/List/3/all/20180423/89743454/1> (referer: http://news.donga.com/List?ymd=20180423&m=NP)
+2018-04-24 00:25:55,667 DEBUG   : [scrapy.core.engine] Crawled (200) <GET http://news.donga.com/List/3/all/20180423/89743432/1> (referer: http://news.donga.com/List?ymd=20180423&m=NP)
+2018-04-24 00:25:55,667 DEBUG   : [scrapy.core.scraper] Scraped from <200 http://news.donga.com/List/3/all/20180423/89743387/1>
+{'author': [u'\uc815\ubbf8\uacbd \uc804\ubb38\uae30\uc790 ',
+            u'\ubc15\uc6a9 \ud2b9\ud30c\uc6d0 ',
+            u'\uc11c\uc601\uc544 \ud2b9\ud30c\uc6d0 '],
+ 'date': ['2018-04-23'],
+ 'title': [u'\ud2b8\ub7fc\ud504 \u201c\uc88b\uc740 \uc18c\uc2dd\u201d \ud761\uc871\u2026 \ubc31\uc545\uad00 \ub0b4\ubd80\uc120 \u2018\uae40\uc815\uc740\uc758 \ub36b\u2019 \uacbd\uacc4\ub860'],
+ 'url': ['http://news.donga.com/List/3/all/20180423/89743387/1']}
+2018-04-24 00:25:55,676 INFO    : [root        ] The url of the target is: http://news.donga.com/List/3/all/20180423/89743437/1
+2018-04-24 00:25:55,696 DEBUG   : [scrapy.core.engine] Crawled (200) <GET http://news.donga.com/List/3/all/20180423/89743473/1> (referer: http://news.donga.com/List?ymd=20180423&m=NP)
+2018-04-24 00:25:55,697 DEBUG   : [scrapy.core.scraper] Scraped from <200 http://news.donga.com/List/3/all/20180423/89743437/1>
+{'author': [u'\uc2e0\ub098\ub9ac \uae30\uc790 '],
+ 'date': ['2018-04-23'],
+ 'title': [u'\u5317 \uae40\ucc3d\uc120-\ub9ac\uc120\uad8c \ub4f1 \u2018\ub300\ub0a8 \uc77c\uafbc\u2019 \ub300\uac70 \uc2b9\uc9c4'],
+ 'url': ['http://news.donga.com/List/3/all/20180423/89743437/1']}
+2018-04-24 00:25:55,701 DEBUG   : [scrapy.core.engine] Crawled (200) <GET http://news.donga.com/List/3/all/20180423/89743447/1> (referer: http://news.donga.com/List?ymd=20180423&m=NP)
+2018-04-24 00:25:55,701 INFO    : [root        ] The url of the target is: http://news.donga.com/List/3/all/20180423/89743463/1
+2018-04-24 00:25:55,715 DEBUG   : [scrapy.core.scraper] Scraped from <200 http://news.donga.com/List/3/all/20180423/89743463/1>
+{'author': [u'\uc870\ub3d9\uc8fc \uae30\uc790 '],
+ 'date': ['2018-04-23'],
+ 'title': [u'\uacbd\ucc30, \ub4dc\ub8e8\ud0b9 \ub3c8\uac70\ub798 \uae40\uacbd\uc218 \ubcf4\uc88c\uad00 \uace7 \uc18c\ud658'],
+ 'url': ['http://news.donga.com/List/3/all/20180423/89743463/1']}
+2018-04-24 00:25:55,767 INFO    : [root        ] The url of the target is: http://news.donga.com/List/3/all/20180423/89743454/1
+2018-04-24 00:25:55,782 INFO    : [root        ] The url of the target is: http://news.donga.com/List/3/all/20180423/89743432/1
+2018-04-24 00:25:55,795 DEBUG   : [scrapy.core.scraper] Scraped from <200 http://news.donga.com/List/3/all/20180423/89743454/1>
+{'author': [u'\ud55c\uc6b0\uc2e0 \uae30\uc790 '],
+ 'date': ['2018-04-23'],
+ 'title': [u'\u201c\uc870\ud604\ubbfc-\uc870\ud604\uc544 \ubaa8\ub4e0 \uc9c1\ucc45 \uc0ac\ud1f4\u201d'],
+ 'url': ['http://news.donga.com/List/3/all/20180423/89743454/1']}
+2018-04-24 00:25:55,797 DEBUG   : [scrapy.core.scraper] Scraped from <200 http://news.donga.com/List/3/all/20180423/89743432/1>
+{'author': [u'\ud55c\uc0c1\uc900 \uae30\uc790 '],
+ 'date': ['2018-04-23'],
+ 'title': [u'\u9751\ub0b4\ubd80 \u201c\ud48d\uacc4\ub9ac \ud3d0\uc1c4 \uce74\ub4dc, \ub0a8\ubd81\ud68c\ub2f4 \uc774\ud6c4 \uaebc\ub0bc\uc904 \uc54c\uc558\ub294\ub370\u2026\u201d'],
+ 'url': ['http://news.donga.com/List/3/all/20180423/89743432/1']}
+2018-04-24 00:25:55,800 INFO    : [root        ] The url of the target is: http://news.donga.com/List/3/all/20180423/89743473/1
+2018-04-24 00:25:55,817 INFO    : [root        ] The url of the target is: http://news.donga.com/List/3/all/20180423/89743447/1
+2018-04-24 00:25:55,830 DEBUG   : [scrapy.core.scraper] Scraped from <200 http://news.donga.com/List/3/all/20180423/89743473/1>
+{'author': [u'\ud669\uc778\ucc2c \uae30\uc790 ',
+            u'\ubc15\uc6a9 \ud2b9\ud30c\uc6d0 '],
+ 'date': ['2018-04-23'],
+ 'title': [u'\u2018\ube44\ud575\ud654\u2019\ub294 \ube80\ucc44, \ud575\uc2e4\ud5d8 \uc911\ub2e8 \uaebc\ub0b8 \uae40\uc815\uc740'],
+ 'url': ['http://news.donga.com/List/3/all/20180423/89743473/1']}
+2018-04-24 00:25:55,832 DEBUG   : [scrapy.core.scraper] Scraped from <200 http://news.donga.com/List/3/all/20180423/89743447/1>
+{'date': ['2018-04-23'],
+ 'title': [u'[\uc54c\ub9bd\ub2c8\ub2e4]\uafc8\uc744 \ub09a\ub294 \ub2f9\uc2e0\uc744 \uae30\ub2e4\ub9bd\ub2c8\ub2e4'],
+ 'url': ['http://news.donga.com/List/3/all/20180423/89743447/1']}
+2018-04-24 00:25:55,834 INFO    : [scrapy.core.engine] Closing spider (finished)
+2018-04-24 00:25:55,835 INFO    : [scrapy.statscollectors] Dumping Scrapy stats:
+{'downloader/request_bytes': 6195,
+ 'downloader/request_count': 21,
+ 'downloader/request_method_count/GET': 21,
+ 'downloader/response_bytes': 515877,
+ 'downloader/response_count': 21,
+ 'downloader/response_status_count/200': 21,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2018, 4, 23, 15, 25, 55, 835010),
+ 'item_scraped_count': 20,
+ 'log_count/DEBUG': 42,
+ 'log_count/INFO': 27,
+ 'memusage/max': 48779264,
+ 'memusage/startup': 48779264,
+ 'request_depth_max': 1,
+ 'response_received_count': 21,
+ 'scheduler/dequeued': 21,
+ 'scheduler/dequeued/memory': 21,
+ 'scheduler/enqueued': 21,
+ 'scheduler/enqueued/memory': 21,
+ 'start_time': datetime.datetime(2018, 4, 23, 15, 25, 54, 820612)}
+2018-04-24 00:25:55,835 INFO    : [scrapy.core.engine] Spider closed (finished)
